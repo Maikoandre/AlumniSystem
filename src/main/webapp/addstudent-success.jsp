@@ -7,7 +7,9 @@
 <title>Add Student Success</title>
 </head>
 <body>
-	<p>Student registered!</p>
+	<div class="flex justify-center items-center">
+  		<p class="text-3xl font-bold text-gray-800">Student registered!</p>
+	</div>
 	<jsp:include page="studentform.html"></jsp:include>
 </body>
 </html>

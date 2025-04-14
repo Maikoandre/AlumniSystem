@@ -3,29 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <title>Add New Student</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
- <h1>Add New Student</h1>
  
- <form action="addstudent.jsp">
- 	<table>
- 		<tr>
- 			<td>Name: </td>
- 			<td><input type="text" name="name"/></td>
- 		</tr>
- 		<tr>
- 			<td>Email: </td>
- 			<td><input type="text" name="email"/></td>
- 		</tr>
- 		<tr>
- 			<td>Course: </td>
- 			<td><input type="text" name="course"/></td>
- 		</tr>
- 		<tr>
- 			<td colspan="2"><input type="submit" value="Add Student"/></td>
- 		</tr>
- 	</table>
- </form>
+ <div>
+ 	
+ 	<form action="addstudent.jsp" method="post" class="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
+  <div class="space-y-4">
+  	<h1 class="text-3xl font-bold text-gray-800">Add New Student</h1>
+    <!-- Name Field -->
+    <div>
+      <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+        required
+      >
+    </div>
+
+    <!-- Email Field -->
+    <div>
+      <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+        required
+      >
+    </div>
+
+    <!-- Course Field -->
+    <div>
+      <label for="course" class="block text-sm font-medium text-gray-700">Course</label>
+      <input 
+        type="text" 
+        id="course" 
+        name="course" 
+        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+        required
+      >
+    </div>
+
+    <div class="space-y-4"> <!-- Adds vertical space between child elements -->
+  <div>
+    <button 
+      type="submit" 
+      class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+    >
+      Add Student
+    </button>
+  </div>
+  
+  <a 
+    href="viewstudents.jsp" 
+    class="w-full flex justify-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors shadow"
+  >
+    Back
+  </a>
+</div>
+</form>
+ </div>
  
 </body>
 </html>
