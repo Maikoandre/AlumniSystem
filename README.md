@@ -47,7 +47,7 @@ AlumniSystem/ <br>
   - JSP 2.3
 - **Frontend**:
   - JSP with JSTL 1.2
-  - Basic HTML/CSS
+  - Tailwind CSS
 - **Database**:
   - MySQL 8.0
   - JDBC connectivity
