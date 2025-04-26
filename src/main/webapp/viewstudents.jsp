@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>View Students</title>
+<title>Alumni</title>
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
@@ -12,16 +12,16 @@
     <%@ page import="com.AlumniSystem.dao.StudentDao, com.AlumniSystem.bean.*, java.util.*" %>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
     <%
-    
+
     List<Student> list = StudentDao.getAll();
    	request.setAttribute("list", list);
-   	
+
    	%>
    	<div class="min-h-screen flex flex-col items-center justify-center p-4">
    	  <h1 class="text-3xl font-bold text-gray-800">Listing students</h1>
-   	
+
    	<table class="w-full max-w-4xl text-lg border border-gray-300 shadow-lg">
-  
+
    		<thead class="bg-gray-100">
    			<tr>
    				<th class="p-4 border-b border-gray-300 text-left">ID</th>
@@ -44,7 +44,7 @@
 				</tr>
 			</c:forEach>
    		</tbody>
-		
+
    	</table>
    	<a href="addstudentform.jsp" class="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors shadow">
     Register new student
